@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monkey Insights</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <section id="menu-container">
+        <!-- hamburger-menu -->
+        <div id="menu-wrapper">
+            <div id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- 手機版 Logo -->
+        <div class="logoNav">
+            <a href="index.html"><strong>Monkey</strong>&nbsp;Insights</a>
+        </div>
+        <!-- 手機版登出 ICON -->
+        <a href="index.html" class="logoutIconNav"><span class="icon-logOut"></span></a>
+        <!-- menu-wrapper -->
+        <ul class="menu-list accordion">
+            <!-- menu-list accordion 登入後-->
+            <li class="accordion-toggle"><a href="overview.html">Overview</a></li>
+            <li class="accordion-toggle"><a href="createclone.html">Create/Clone</a></li>
+            <li class="accordion-toggle"><a href="managecampaign.html">Manage Campaign</a></li>
+            <li class="accordion-toggle"><a href="account.html">Account</a></li>
+            <li class="accordion-toggle"><a href="contact.html">Contact</a></li>
+        </ul>
+    </section>
+
+    <header class="animated fadeInDown" style="animation-delay: .2s;">
+        <!-- 桌機 Logo -->
+        <div class="logo">
+            <a href="index.html"><strong>Monkey</strong>&nbsp;Insights</a>
+        </div>
+        <!-- Menu 登入後-->
+        <nav>
+            <ul>
+                <li><a class="active" href="overview.html">Overview</a></li>
+                <li><a href="createclone.html">Create/Clone</a></li>
+                <li><a href="managecampaign.html">Manage Campaign</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="line"></div>
+            <a href="javascript:void(0)" class="loginIcon"><span class="icon-logIn"><b>$ 100.00</b></span></a>
+            <a href="index.html" class="logoutIcon"><span class="icon-logOut"><b>Logout</b></span></a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <section class="overviewContainer">
+        <!-- Review & Update Status Required -->
+        <div class="wrapExpand Review animated fadeInUp" style="animation-delay: 1.2s;">
+            <div class="top">
+                <div class="titleS">Review & Update Status Required:
+                    <span class="greytxt">(notification of completed surveys for status
+                        change/approval/decline/revise)</span>
+                </div>
+                <a class="expandBtn" href="javascript:void(0)">Expand</a>
+            </div>
+            <div class="bottom ReviewBottom">
+                <table class="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Date Created</th>
+                            <th>Date Done</th>
+                            <th>Survey Name</th>
+                            <th>Wave</th>
+                            <th>Shop ID</th>
+                            <th>Shopper ID</th>
+                            <th>Credits</th>
+                            <th>Auto-Approve Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>June 1, 2019</td>
+                            <td>June 1, 2019</td>
+                            <td>Free Trial</td>
+                            <td>1</td>
+                            <td>01082019001</td>
+                            <td>ShpprFree</td>
+                            <td>0</td>
+                            <td>Aug 30, 2019</td>
+                            <td><strong>Approved</strong></td>
+                        </tr>
+                        <tr>
+                            <td>June 1, 2019</td>
+                            <td>June 1, 2019</td>
+                            <td>Free Trial</td>
+                            <td>1</td>
+                            <td>01082019001</td>
+                            <td>ShpprFree</td>
+                            <td>0</td>
+                            <td>Aug 30, 2019</td>
+                            <td><strong>Approved</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- LiveSurvey -->
+        <div class="wrapExpand LiveSurvey animated fadeInUp" style="animation-delay: 1.4s;">
+            <div class="top">
+                <div class="titleS">Live Surveys:
+                    <span class="greytxt">(list live surveys not completed - option to edit / cancel)</span>
+                </div>
+                <a class="expandBtn" href="javascript:void(0)">Expand</a>
+            </div>
+            <div class="bottom LiveSurveyBottom">
+                <table class="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Date Created</th>
+                            <th>Date Done</th>
+                            <th>Survey Name</th>
+                            <th>Wave</th>
+                            <th>Shop ID</th>
+                            <th>Shopper ID</th>
+                            <th>Credits</th>
+                            <th>Auto-Approve Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>June 1, 2019</td>
+                            <td>June 1, 2019</td>
+                            <td>Free Trial</td>
+                            <td>1</td>
+                            <td>01082019001</td>
+                            <td>ShpprFree</td>
+                            <td>0</td>
+                            <td>Aug 30, 2019</td>
+                            <td><strong>Approved</strong></td>
+                        </tr>
+                        <tr>
+                            <td>June 1, 2019</td>
+                            <td>June 1, 2019</td>
+                            <td>Free Trial</td>
+                            <td>1</td>
+                            <td>01082019001</td>
+                            <td>ShpprFree</td>
+                            <td>0</td>
+                            <td>Aug 30, 2019</td>
+                            <td><strong>Approved</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Campaign Overview -->
+        <div class="wrapExpand animated fadeInUp" style="animation-delay: 1.6s;">
+            <div class="campaignArea">
+                <div class="titleS">Campaign Overview</div>
+                <div class="viewContent">
+                    <div class="viewBox">
+                        <table class="viewTable BDno">
+                            <tbody>
+                                <tr>
+                                    <th>Survey Name : </th>
+                                    <td>Free Trial</td>
+                                </tr>
+                                <tr>
+                                    <th>Date Created : </th>
+                                    <td>Aug 1, 2019</td>
+                                </tr>
+                                <tr>
+                                    <th>Total Surveys : </th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th>Current Surveys : </th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th>Total Credits Used : </th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th>Download : </th>
+                                    <td> <a href="javascript:void(0)">PDF</a>/
+                                        <a href="javascript:void(0)">Excel</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="viewBox active">
+                        <table class="viewTable BDno">
+                            <tbody>
+                                <tr>
+                                    <th>Survey Name : </th>
+                                    <td>Free Trial</td>
+                                </tr>
+                                <tr>
+                                    <th>Date Created : </th>
+                                    <td>Aug 1, 2019</td>
+                                </tr>
+                                <tr>
+                                    <th>Total Surveys : </th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th>Current Surveys : </th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th>Total Credits Used : </th>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th>Download : </th>
+                                    <td> <a href="javascript:void(0)">PDF</a>/
+                                        <a href="javascript:void(0)">Excel</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="titleS">Survey Name: <strong>Free Trial</strong></div>
+                <div class="bottomData">
+                    <table class="dataTable BDno">
+                        <thead>
+                            <tr>
+                                <th>Date Created</th>
+                                <th>Date Done</th>
+                                <th>Survey Name</th>
+                                <th>Wave</th>
+                                <th>Shop ID</th>
+                                <th>Shopper ID</th>
+                                <th>Credits</th>
+                                <th>Auto-Approve Date</th>
+                                <th>Status</th>
+                                <th>Option</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>June 1, 2019</td>
+                                <td>June 1, 2019</td>
+                                <td>Free Trial</td>
+                                <td>1</td>
+                                <td>01082019001</td>
+                                <td>ShpprFree</td>
+                                <td>0</td>
+                                <td>Aug 30, 2019</td>
+                                <td><strong>Approved</strong></td>
+                                <td><a href="javascript:void(0)">PDF</a>/
+                                    <a href="javascript:void(0)">Excel</a></td>
+                            </tr>
+                            <tr>
+                                <td>June 1, 2019</td>
+                                <td>June 1, 2019</td>
+                                <td>Free Trial</td>
+                                <td>1</td>
+                                <td>01082019001</td>
+                                <td>ShpprFree</td>
+                                <td>0</td>
+                                <td>Aug 30, 2019</td>
+                                <td><strong>Approved</strong></td>
+                                <td><a href="javascript:void(0)">PDF</a>/
+                                    <a href="javascript:void(0)">Excel</a></td>
+                            </tr>
+                            <tr>
+                                <td>June 1, 2019</td>
+                                <td>June 1, 2019</td>
+                                <td>Free Trial</td>
+                                <td>1</td>
+                                <td>01082019001</td>
+                                <td>ShpprFree</td>
+                                <td>0</td>
+                                <td>Aug 30, 2019</td>
+                                <td><strong>Approved</strong></td>
+                                <td><a href="javascript:void(0)">PDF</a>/
+                                    <a href="javascript:void(0)">Excel</a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Popup 彈跳後的黑幕＋成功登錄 -->
+
+    <section class="overview hide">
+        <!-- Black BG -->
+        <div class="BlackBg animated fadeInUp"></div>
+        <!-- white bg-->
+        <div class="wrap animated fadeInUp" style="animation-delay: .8s;">
+            <!-- white bg 成功登陸-->
+            <div class="wrapper loginsuccess">
+                <div class="titleA PT-80">
+                    <div class="txt"><strong>LogIn</strong>&nbsp;Success</div>
+                </div>
+                <div class="content animated fadeInUp">
+                    <p><b>Welcome to Monkey Insights You have successfully created your account and logged in.As a first
+                            time user, would you like to use your free 1 time trial survey now?<br>
+                            <span class="greytxt">(you may access the free trial on the credits page later)</span></b>
+                    </p>
+                </div>
+                <div class="Btn">
+                    <!-- 登入 按鈕 -->
+                    <button class="Yes"><a href="javascript:void(0)">Yes</a></button>
+                    <!-- 註冊 按鈕 -->
+                    <button class="Later"><a href="javascript:void(0)">No, later</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Popup 彈跳後的黑幕＋調查頁面 -->
+    <section class="overview hide">
+        <!-- Black BG -->
+        <div class="BlackBg animated fadeInUp"></div>
+        <!-- white bg-->
+        <div class="wrap animated fadeInUp" style="animation-delay: .8s;">
+            <!-- white bg 調查頁面 -->
+            <div class="wrapper freetrial">
+                <div class="titleA">
+                    <div class="txt"><strong>Free</strong>&nbsp;Trial Survey</div>
+                </div>
+                <div class="content animated fadeInUp">
+                    <div class="txt">This is a free trial as a guide to showcase the basic functionality of Monkey
+                        Insights.
+                        As this is a free trial, any cost incurred by the user and/or shopper is solely the
+                        responsibility of the user.
+                        This may include (but not limited to) shop fee, reimbursement.</div>
+                    <div class="inputZone">
+                        <b>
+                            <span class="redtxt">*</span>Assigned Shopper to release Survey Access :
+                        </b>
+                        <input type="text" placeholder="Enter username Account of shopper assigned">
+                    </div>
+                    <div class="titleS">
+                        Input the following questions/instructions for each of the below:
+                        <span class="greytxt">(<span class="redtxt">*</span>Required )</span>
+                    </div>
+                    <div class="inputZone BDno">
+                        <b>
+                            <span class="redtxt">*</span>1. Question for Short Answer (max 1000 characters) :
+                        </b>
+                        <textarea cols="50" rows="20"
+                            placeholder="Enter Text for Short Question you want to ask"></textarea>
+                    </div>
+                    <div class="inputZone BDno">
+                        <b>
+                            <span class="redtxt">*</span>2. Question for Long Answer (max 5000 characters) :
+                        </b>
+                        <textarea cols="50" rows="20"
+                            placeholder="Enter Text for Long Question you want to ask"></textarea>
+                    </div>
+                    <div class="inputZone BDno">
+                        <b>
+                            <span class="redtxt">*</span>3. Multiple Choice (select ONE answer only) :
+                        </b>
+                        <form>
+                            <input type="radio" name="choice" id="Enter First Choice text" />
+                            <input class="w100" type="text" placeholder="Enter First Choice text">
+                            <!-- <label for="Enter First Choice text">Enter First Choice text</label> -->
+
+                            <br>
+                            <input type="radio" name="choice" id="Enter Second Choice text" />
+                            <input class="w100" type="text" placeholder="Enter Second Choice text">
+                            <!-- <label for="Enter Second Choice text">Enter Second Choice text</label> -->
+
+                            <br>
+                            <input type="radio" name="choice" id="Enter Third Choice text (leave blank if none)" />
+                            <input class="w100" type="text" placeholder="Enter Third Choice text (leave blank if none)">
+                            <!-- <label for="Enter Third Choice text (leave blank if none)">Enter Third Choice text
+                                (leave
+                                blank if none)</label> -->
+
+                            <br>
+                            <input type="radio" name="choice" id="Enter Fourth Choice text (leave blank if none)" />
+                            <input class="w100" type="text"
+                                placeholder="Enter Fourth Choice text (leave blank if none)">
+                            <!-- <label for="Enter Fourth Choice text (leave blank if none)">Enter Fourth Choice text
+                                (leave blank if none)</label> -->
+
+                            <br>
+                            <input type="radio" name="choice" id=" Enter Fifth Choice text (leave blank if none)" />
+                            <input class="w100" type="text" placeholder="Enter Fifth Choice text (leave blank if none)">
+                            <!-- <label for=" Enter Fifth Choice text (leave blank if none)"> Enter Fifth Choice text
+                                (leave
+                                blank if none)</label> -->
+
+                        </form>
+                    </div>
+                    <div class="inputZone BDno">
+                        <b>
+                            <span class="redtxt">*</span>4. Multiple Answer Response (select any that apply) :
+                        </b>
+                        <form>
+                            <input type="checkbox" name="choice" value="First">
+                            <input class="w100" type="text" placeholder="Enter First Choice text">
+                            <!-- <label for="Enter First Choice text">Enter First Choice text</label> -->
+                            <br>
+                            <input type="checkbox" name="choice" value="Second">
+                            <input class="w100" type="text" placeholder="Enter Second Choice text">
+                            <!-- <label for="Enter Second Choice text">Enter Second Choice text</label> -->
+                            <br>
+                            <input type="checkbox" name="choice" value="Third">
+                            <input class="w100" type="text" placeholder="Enter Third Choice text (leave blank if none)">
+                            <!-- <label for="Enter Third Choice text (leave blank if none)">Enter Third Choice text
+                                (leave blank if none)</label> -->
+                            <br>
+                            <input type="checkbox" name="choice" value="Fourth">
+                            <input class="w100" type="text"
+                                placeholder="Enter Fourth Choice text (leave blank if none)">
+                            <!-- <label for="Enter Fourth Choice text (leave blank if none)">Enter Fourth Choice text
+                                (leave blank if none)</label> -->
+                            <br>
+                            <input type="checkbox" name="choice" value="Fifth">
+                            <input class="w100" type="text" placeholder="Enter Fifth Choice text (leave blank if none)">
+                            <!-- <label for=" Enter Fifth Choice text (leave blank if none)"> Enter Fifth Choice text
+                                (leave
+                                blank if none)</label> -->
+                        </form>
+                    </div>
+                    <div class="inputZone BDno">
+                        <b>5. Image Upload:</b>
+                        <button>Upload Image</button>
+                    </div>
+                </div>
+                <div class="Btn">
+                    <!-- Make Survey Live 按鈕 -->
+                    <button class="makesure"><a href="javascript:void(0)">Make Survey Live</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script type="text/javascript" src="./js/wow.min.js"></script>
+<script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+
+</html>

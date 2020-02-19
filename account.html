@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monkey Insights</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <section id="menu-container">
+        <!-- hamburger-menu -->
+        <div id="menu-wrapper">
+            <div id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- 手機版 Logo -->
+        <div class="logoNav">
+            <a href="index.html"><strong>Monkey</strong>&nbsp;Insights</a>
+        </div>
+        <!-- 手機版登出 ICON -->
+        <a href="index.html" class="logoutIconNav"><span class="icon-logOut"></span></a>
+        <!-- menu-wrapper -->
+        <ul class="menu-list accordion">
+            <!-- menu-list accordion 登入後-->
+            <li class="accordion-toggle"><a href="overview.html">Overview</a></li>
+            <li class="accordion-toggle"><a href="createclone.html">Create/Clone</a></li>
+            <li class="accordion-toggle"><a href="managecampaign.html">Manage Campaign</a></li>
+            <li class="accordion-toggle"><a href="account.html">Account</a></li>
+            <li class="accordion-toggle"><a href="contact.html">Contact</a></li>
+        </ul>
+    </section>
+
+    <header class="animated fadeInDown" style="animation-delay: .2s;">
+        <!-- 桌機 Logo -->
+        <div class="logo">
+            <a href="index.html"><strong>Monkey</strong>&nbsp;Insights</a>
+        </div>
+        <!-- Menu 登入後-->
+        <nav>
+            <ul>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="createclone.html">Create/Clone</a></li>
+                <li><a href="managecampaign.html">Manage Campaign</a></li>
+                <li><a class="active" href="account.html">Account</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="line"></div>
+            <a href="javascript:void(0)" class="loginIcon"><span class="icon-logIn"><b>$ 100.00</b></span></a>
+            <a href="index.html" class="logoutIcon"><span class="icon-logOut"><b>Logout</b></span></a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <section class="accountContainer">
+        <!-- Profile Settings -->
+        <div class="content animated fadeInUp" style="animation-delay: .8s;">
+            <div class="infoArea">
+                <div class="name">Username : testtesttest01</div>
+                <div class="company">Company : testtesttest01</div>
+            </div>
+            <div class="submenu2">
+                <ul>
+                    <li><a class="active" href="javascript:void(0)">Profile Settings</a></li>
+                    <li><a href="javascript:void(0)">Notification Settings</a></li>
+                    <li><a href="javascript:void(0)">Payment Settings</a></li>
+                    <li><a href="javascript:void(0)">Purchase Credits</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="accountArea">
+                <div class="titleS">Profile Settings</div>
+                <div class="editContent">
+                    <p>Email :</p>
+                    <div class="inputZone">
+                        <b>Current Email :</b>
+                        <input type="text" placeholder="Current Email">
+                        <b>New Email :</b>
+                        <input type="text" placeholder="New Email">
+                    </div>
+
+                    <p>Contact :</p>
+                    <div class="inputZone">
+                        <b>Current Contact :</b>
+                        <input type="text" placeholder="Current Contact">
+                        <b>New Contact :</b>
+                        <input type="text" placeholder="New Contact">
+                    </div>
+
+                    <p>Password :</p>
+                    <div class="inputZone">
+                        <b>Enter Current Password :</b>
+                        <input type="text" placeholder="Enter Current Password">
+                        <b>Type New Password :</b>
+                        <input type="text" placeholder="Type New Password">
+                        <b>Confirm New Password :</b>
+                        <input type="text" placeholder="Confirm New Password">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification Settings -->
+        <div class="content animated fadeInUp" style="animation-delay: .8s;">
+            <div class="infoArea">
+                <div class="name">Username : testtesttest01</div>
+                <div class="company">Company : testtesttest01</div>
+            </div>
+            <div class="submenu2">
+                <ul>
+                    <li><a href="javascript:void(0)">Profile Settings</a></li>
+                    <li><a class="active" href="javascript:void(0)">Notification Settings</a></li>
+                    <li><a href="javascript:void(0)">Payment Settings</a></li>
+                    <li><a href="javascript:void(0)">Purchase Credits</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="accountArea">
+                <div class="titleS">Notification Settings</div>
+                <div class="editContent">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Receive Notification when</th>
+                                <th>Yes</th>
+                                <th>No</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A shopper has claimed a survey</td>
+                                <td><input type="radio" name="claimed" id="Yes"></td>
+                                <td><input type="radio" name="claimed" id="No"></td>
+                            </tr>
+                            <tr>
+                                <td>A shopper has completed & submitted a survey for review</td>
+                                <td><input type="radio" name="submitted" id="Yes"></td>
+                                <td><input type="radio" name="submitted" id="No"></td>
+                            </tr>
+                            <tr>
+                                <td>A claimed survey has timed out and revert back to live again</td>
+                                <td><input type="radio" name="again" id="Yes"></td>
+                                <td><input type="radio" name="again" id="No"></td>
+                            </tr>
+                            <tr>
+                                <td>A shopper has responded to survey correction request</td>
+                                <td><input type="radio" name="responded" id="Yes"></td>
+                                <td><input type="radio" name="responded" id="No"></td>
+                            </tr>
+                            <tr>
+                                <td>A survey campaign is completed</td>
+                                <td><input type="radio" name="completed" id="Yes"></td>
+                                <td><input type="radio" name="completed" id="No"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script type="text/javascript" src="./js/wow.min.js"></script>
+<script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+
+</html>

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monkey Insights</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <section id="menu-container">
+        <!-- hamburger-menu -->
+        <div id="menu-wrapper">
+            <div id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- 手機版 Logo -->
+        <div class="logoNav">
+            <a href="index.html"><strong>Monkey</strong>&nbsp;Insights</a>
+        </div>
+        <!-- 手機版登出 ICON -->
+        <a href="index.html" class="logoutIconNav"><span class="icon-logOut"></span></a>
+        <!-- menu-wrapper -->
+        <ul class="menu-list accordion">
+            <!-- menu-list accordion 登入後-->
+            <li class="accordion-toggle"><a href="overview.html">Overview</a></li>
+            <li class="accordion-toggle"><a href="createclone.html">Create/Clone</a></li>
+            <li class="accordion-toggle"><a href="managecampaign.html">Manage Campaign</a></li>
+            <li class="accordion-toggle"><a href="account.html">Account</a></li>
+            <li class="accordion-toggle"><a href="contact.html">Contact</a></li>
+        </ul>
+    </section>
+
+    <header class="animated fadeInDown" style="animation-delay: .2s;">
+        <!-- 桌機 Logo -->
+        <div class="logo">
+            <a href="index.html"><strong>Monkey</strong>&nbsp;Insights</a>
+        </div>
+        <!-- Menu 登入後-->
+        <nav>
+            <ul>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a class="active" href="createclone.html">Create/Clone</a></li>
+                <li><a href="managecampaign.html">Manage Campaign</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="line"></div>
+            <a href="javascript:void(0)" class="loginIcon"><span class="icon-logIn"><b>$ 100.00</b></span></a>
+            <a href="index.html" class="logoutIcon"><span class="icon-logOut"><b>Logout</b></span></a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <section class="createclone animated fadeInUp" style="animation-delay: 1s;">
+        <!-- creat/clone choice -->
+        <div class="content animated fadeInUp" style="animation-delay: .8s;">
+            <div class="titleA">I want to...</div>
+            <div class="Btn ccBTN">
+                <!-- create 按鈕 -->
+                <button class="create"><a href="javascript:void(0)">Create a New <br>Campaign</a></button>
+                <!-- clone 按鈕 -->
+                <button class="clone"><a href="javascript:void(0)">Clone from <br>Campaign</a></button>
+
+                <div class="cloneBox">
+                    <b>Select from Existing Campaign to copy from :</b>
+                    <label for="clone">(click and drop down menu to scroll and select) :</label>
+                    <select id="clone">
+                        <option value="clone">clone</option>
+                        <option value="clone1">clone1</option>
+                        <option value="clone2">clone2</option>
+                        <option value="clone3">clone3</option>
+                    </select>
+                    <input type="text" placeholder="Enter new Survey Title">
+                    <input type="text" placeholder="Enter new Due Date">
+
+                    <button class="clone"><a href="javascript:void(0)">Clone</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!--  Campaign Specs step1-->
+        <div class="content animated fadeInUp" style="animation-delay: .8s;">
+            <div class="courseLine">
+                <div class="step active">Campaign Specs<span class="icon-arrow-right"></span></div>
+                <div class="step">Addresses / Instances<span class="icon-arrow-right"></span></div>
+                <div class="step">Survey Questions<span class="icon-arrow-right"></span></div>
+                <div class="step">Preview<span class="icon-arrow-right"></span></div>
+                <div class="step">Purchase & Confirmation</div>
+            </div>
+            <div class="titleFixed">
+                <div class="CT">Campaign Title :<span>(client view only)</span></div>
+                <div class="SN">Survey Name :<span>(shopper view)</span></div>
+            </div>
+            <div class="questionArea">
+
+                <div class="inputZone">
+                    <b>1. Maximum Reimbursement Amount(HKD) :</b>
+                    <input type="text" placeholder="Maximum Reimbursement Amount">
+                </div>
+
+                <div class="inputZone">
+                    <b>2. Number of surveys :</b>
+                    <input type="text" placeholder="Number of surveys">
+                </div>
+
+                <div class="inputZone">
+                    <b>3. Survey length :</b>
+                    <form>
+                        <input type="radio" name="length" id="10 Questions (1 credit/survey)">
+                        <label for="10 Questions (1 credit/survey)">10 Questions (1 credit/survey)</label>
+                        <br>
+                        <input type="radio" name="length" id="25 Questions (2 credits/survey)">
+                        <label for="25 Questions (2 credits/survey)">25 Questions (2 credits/survey)</label>
+                        <br>
+                        <input type="radio" name="length" id="50 Questions (3 credits/survey)">
+                        <label for="50 Questions (3 credits/survey)">50 Questions (3 credits/survey)</label>
+                        <br>
+                        <input type="radio" name="length" id="100 Questions (5 credits/survey)">
+                        <label for="100 Questions (5 credits/survey)">100 Questions (5 credits/survey)</label>
+                    </form>
+                    <div class="total">
+                        <b>Total Amount of credits required : <span>10HKD</span></b>
+                    </div>
+                </div>
+
+                <div class="inputZone">
+                    <b>4. Survey closing date :</b>
+                    <input type="date" placeholder="Survey closing date">
+                </div>
+
+                <div class="inputZone">
+                    <b>5. Do you wish to assign a specific Shopper(s)?</b>
+                    <form>
+                        <input type="radio" name="assign" id="Yes">
+                        <label for="Yes">Yes</label>
+                        <br>
+                        <input type="radio" name="assign" id="No">
+                        <label for="No">No</label>
+                    </form>
+                </div>
+
+                <div class="inputZone BDno">
+                    <b>6. Enter Shopper Nickname to search</b>
+                    <input type="search" placeholder="Enter Shopper Nickname to search">
+                    <div class="nickBox">
+                        <a href="javascript:void(0)" class="nickList">HKShopper852<span
+                                class="icon-plus-circle"></span></a>
+                        <a href="javascript:void(0)" class="nickList">JohnDoe01<span
+                                class="icon-plus-circle"></span></a>
+                        <a href="javascript:void(0)" class="nickList">Happyshopping<span
+                                class="icon-plus-circle"></span></a>
+                        <a href="javascript:void(0)" class="nickList">Tester01<span class="icon-plus-circle"></span></a>
+                        <a href="javascript:void(0)" class="nickList done">DaisyLam<span
+                                class="icon-x-circle"></span></a>
+                        <a href="javascript:void(0)" class="nickList done">henryfung<span
+                                class="icon-x-circle"></span></a>
+                        <a href="javascript:void(0)" class="nickList done">shopaholic<span
+                                class="icon-x-circle"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="Btn">
+                <!-- Next 按鈕 -->
+                <button class="next"><a href="javascript:void(0)">Next</a></button>
+            </div>
+        </div>
+
+        <!--  Campaign Specs step2-->
+        <div class="content animated fadeInUp" style="animation-delay: .8s;">
+            <div class="courseLine">
+                <div class="step active">Campaign Specs<span class="icon-arrow-right"></span></div>
+                <div class="step">Addresses / Instances<span class="icon-arrow-right"></span></div>
+                <div class="step">Survey Questions<span class="icon-arrow-right"></span></div>
+                <div class="step">Preview<span class="icon-arrow-right"></span></div>
+                <div class="step">Purchase & Confirmation</div>
+            </div>
+            <div class="titleFixed">
+                <div class="CT">Campaign Title :<span>(client view only)</span></div>
+                <div class="SN">Survey Name :<span>(shopper view)</span></div>
+            </div>
+            <div class="questionArea">
+
+                <div class="inputZone">
+                    <b>1. Do you wish to assign a specific Shopper(s)?</b>
+                    <form>
+                        <input type="radio" name="assign" id="Yes">
+                        <label for="Yes">Yes</label>
+                        <br>
+                        <input type="radio" name="assign" id="No">
+                        <label for="No">No</label>
+                    </form>
+                </div>
+
+                <div class="inputZone">
+                    <b>2. Shopper Requirements: (select applicable requirements) :</b>
+                    <form>
+                        <input type="radio" name="requirement" id="Age 18+">
+                        <label for="Age 18+">Age 18+</label>
+                        <br>
+                        <input type="radio" name="requirement" id="Male">
+                        <label for="Male">Male</label>
+                        <br>
+                        <input type="radio" name="requirement" id="Female">
+                        <label for="Female">Female</label>
+                        <br>
+                        <input type="radio" name="requirement" id="Android">
+                        <label for="Android">Android</label>
+                        <br>
+                        <input type="radio" name="requirement" id="iOS">
+                        <label for="iOS">iOS</label>
+                        <br>
+                        <input type="radio" name="requirement" id="Credit Card">
+                        <label for="Credit Card">Credit Card</label>
+                    </form>
+                </div>
+
+                <div class="inputZone">
+                    <b>3. Language Spoken :</b>
+                    <label for="spoken">Choose Language Spoken:</label>
+
+                    <select id="spoken">
+                        <option value="English">English</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Korea">Korea</option>
+                    </select>
+                </div>
+
+                <div class="inputZone">
+                    <b>4. Language Written :</b>
+                    <label for="written">Choose Language Written:</label>
+
+                    <select id="written">
+                        <option value="English">English</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Korea">Korea</option>
+                    </select>
+                </div>
+
+                <div class="inputZone">
+                    <b>5. Secondary Language :</b>
+                    <label for="secondary">Choose Secondary Language:</label>
+
+                    <select id="secondary">
+                        <option value="English">English</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Korea">Korea</option>
+                    </select>
+                </div>
+
+                <div class="inputZone">
+                    <b>6. The same shopper can complete :</b>
+                    <input class="short" type="text" placeholder="Number">of the surveys.
+                </div>
+
+                <div class="inputZone">
+                    <b>7. The same shopper can participate</b>
+                    <form>
+                        <input type="radio" name="participate" id="Any/all waves">
+                        <label for="Any/all waves">Any/all waves</label>
+                        <br>
+                        <input type="radio" name="participate" id="Alternate waves only">
+                        <label for="Alternate waves only">Alternate waves only</label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="Btn">
+                <!-- Next 按鈕 -->
+                <button class="next"><a href="javascript:void(0)">Next</a></button>
+            </div>
+        </div>
+
+        <!-- Addresses / Instances -->
+        <div class="content animated fadeInUp" style="animation-delay: .8s;">
+            <div class="courseLine">
+                <div class="step">Campaign Specs<span class="icon-arrow-right"></span></div>
+                <div class="step active">Addresses / Instances<span class="icon-arrow-right"></span></div>
+                <div class="step">Survey Questions<span class="icon-arrow-right"></span></div>
+                <div class="step">Preview<span class="icon-arrow-right"></span></div>
+                <div class="step">Purchase & Confirmation</div>
+            </div>
+            <div class="questionArea">
+                <div class="inputZone">
+                    <b>1. Surveys are for a</b>
+                    <form>
+                        <input type="radio" name="survey" id="digital application (web/mobile)">
+                        <label for="digital application (web/mobile)">digital application (web/mobile)</label>
+                        <br>
+                        <input type="radio" name="survey" id="physical location (address required) ">
+                        <label for="physical location (address required) ">physical location (address required) </label>
+                    </form>
+                </div>
+                <div class="inputZone">
+                    <b>2. Surveys are at</b>
+                    <form>
+                        <input type="radio" name="survey" id="1 location">
+                        <label for="1 location">1 location</label>
+                        <br>
+                        <input type="radio" name="survey" id="multiple location">
+                        <label for="multiple location">multiple location</label>
+                    </form>
+                    <div class="mapArea">
+                        <div class="mapBox">
+                            <div class="mapList">
+                                <input type="text" placeholder="input Address 1">
+                                <button><a href="javascript:void(0)">view on google map</a></button>
+                            </div>
+                            <div class="mapList">
+                                <input type="text" placeholder="input Address 2">
+                                <button><a href="javascript:void(0)">view on google map</a></button>
+                            </div>
+                            <div class="mapList">
+                                <input type="text" placeholder="input Address 3">
+                                <button><a href="javascript:void(0)">view on google map</a></button>
+                            </div>
+                            <div class="mapList">
+                                <input type="text" placeholder="input Address 4">
+                                <button><a href="javascript:void(0)">view on google map</a></button>
+                            </div>
+                            <div class="mapList">
+                                <input type="text" placeholder="input Address 5">
+                                <button><a href="javascript:void(0)">view on google
+                                        map</a></button>
+                            </div>
+                        </div>
+                        <div class="mapFrame">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.8800329612172!2d121.51707051500108!3d25.072054942918925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a949238cdb31%3A0x550ab6d9ce614013!2zU1RBUkJVQ0tTIOaYn-W3tOWFiyAo5bqr5YCr5om_5b636ZaA5biCKQ!5e0!3m2!1szh-TW!2stw!4v1581574395309!5m2!1szh-TW!2stw"
+                                width="100%" height="240" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Btn">
+                <!-- Next 按鈕 -->
+                <button class="next"><a href="javascript:void(0)">Next</a></button>
+            </div>
+        </div>
+
+        <!-- Survey Questions -->
+        <div class="content animated fadeInUp" style="animation-delay: .8s;">
+            <div class="courseLine">
+                <div class="step">Campaign Specs<span class="icon-arrow-right"></span></div>
+                <div class="step">Addresses / Instances<span class="icon-arrow-right"></span></div>
+                <div class="step active">Survey Questions<span class="icon-arrow-right"></span></div>
+                <div class="step">Preview<span class="icon-arrow-right"></span></div>
+                <div class="step">Purchase & Confirmation</div>
+            </div>
+            <div class="questionArea questionArea2">
+                <p><strong>Survey Description / Instructions :</strong><br>
+                </p>
+                <span class="greytxt">
+                    (shopper will require to confirmed they have read the instructions. Deviation or failure to
+                    follow instructions will result in failed survey report. Conversely, it is the client’s
+                    responsibility
+                    to avoid unclear/ambiguous questions/instructions.)
+                </span>
+                <div class="inputZone">
+                    <b>Survey Questions :<a href="javascript:void(0)"><span class="icon-plus-circle"></span></a>
+                        <select id="type">
+                            <option value="Question for Short answer response - max 200 characters">Question for Short
+                                answer response - max 200 characters</option>
+                            <option value="Question for Long answer response - max 1000 characters">Question for Long
+                                answer
+                                response - max 1000 characters</option>
+                            <option value="Multiple Choice (True/False) response (select ONE choice only)">Multiple
+                                Choice
+                                (True/False) response (select ONE choice only)</option>
+                            <option value="Multiple Answer response (select any applicable up to 4 choices)">Multiple
+                                Answer
+                                response (select any applicable up to 4 choices)</option>
+                            <option value="Image upload (photo/screenshot)">Image upload (photo/screenshot)</option>
+                        </select></b>
+                </div>
+
+                <!-- 製作好的問題 -->
+                <p><strong>Survey Questions Total 2 of 25</strong></p>
+                <div class="inputZone inputDone">
+                    <b>1. Upload photo of shop front with visible logo :</b>
+                    <button>Upload Image</button>
+                    <a href="javascript:void(0)"><span class="icon-minus-circle"></span></a>
+                </div>
+                <div class="inputZone inputDone">
+                    <b>
+                        2. Question for Short Answer (max 1000 characters) :
+                    </b>
+                    <textarea cols="50" rows="20"
+                        placeholder="Enter Text for Short Question you want to ask"></textarea>
+                    <a href="javascript:void(0)"><span class="icon-minus-circle"></span></a>
+                </div>
+
+                <!-- select的問題選單 -->
+                <div class="inputZone inputDone hide">
+                    <b>
+                        1. Question for Short Answer (max 1000 characters) :
+                    </b>
+                    <textarea cols="50" rows="20"
+                        placeholder="Enter Text for Short Question you want to ask"></textarea>
+                    <a href="javascript:void(0)"><span class="icon-minus-circle"></span></a>
+
+                </div>
+                <div class="inputZone inputDone hide">
+                    <b>
+                        2. Question for Long Answer (max 5000 characters) :
+                    </b>
+                    <textarea cols="50" rows="20" placeholder="Enter Text for Long Question you want to ask"></textarea>
+                    <a href="javascript:void(0)"><span class="icon-minus-circle"></span></a>
+
+                </div>
+                <div class="inputZone inputDone">
+                    <b>
+                        3. Multiple Choice (select ONE answer only) :
+                    </b>
+                    <form>
+                        <input type="radio" name="choice" id="Enter First Choice text" />
+                        <input class="w100" type="text" placeholder="Enter First Choice text">
+                        <!-- <label for="Enter First Choice text">Enter First Choice text</label> -->
+                        <br>
+                        <input type="radio" name="choice" id="Enter Second Choice text" />
+                        <input class="w100" type="text" placeholder="Enter Second Choice text">
+                        <!-- <label for="Enter Second Choice text">Enter Second Choice text</label> -->
+                        <br>
+                        <input type="radio" name="choice" id="Enter Third Choice text (leave blank if none)" />
+                        <input class="w100" type="text" placeholder="Enter Third Choice text (leave blank if none)">
+                        <!-- <label for="Enter Third Choice text (leave blank if none)">Enter Third Choice text
+                                (leave
+                                blank if none)</label> -->
+                        <br>
+                        <input type="radio" name="choice" id="Enter Fourth Choice text (leave blank if none)" />
+                        <input class="w100" type="text" placeholder="Enter Fourth Choice text (leave blank if none)">
+                        <!-- <label for="Enter Fourth Choice text (leave blank if none)">Enter Fourth Choice text
+                                (leave blank if none)</label> -->
+                        <br>
+                        <input type="radio" name="choice" id=" Enter Fifth Choice text (leave blank if none)" />
+                        <input class="w100" type="text" placeholder="Enter Fifth Choice text (leave blank if none)">
+                        <!-- <label for=" Enter Fifth Choice text (leave blank if none)"> Enter Fifth Choice text
+                                (leave blank if none)</label> -->
+                    </form>
+                    <a href="javascript:void(0)"><span class="icon-minus-circle"></span></a>
+
+                </div>
+                <div class="inputZone inputDone">
+                    <b>
+                        4. Multiple Answer Response (select any that apply) :
+                    </b>
+                    <form>
+                        <input type="checkbox" name="choice" value="First">
+                        <input class="w100" type="text" placeholder="Enter First Choice text">
+                        <!-- <label for="Enter First Choice text">Enter First Choice text</label> -->
+                        <br>
+                        <input type="checkbox" name="choice" value="Second">
+                        <input class="w100" type="text" placeholder="Enter Second Choice text">
+                        <!-- <label for="Enter Second Choice text">Enter Second Choice text</label> -->
+                        <br>
+                        <input type="checkbox" name="choice" value="Third">
+                        <input class="w100" type="text" placeholder="Enter Third Choice text (leave blank if none)">
+                        <!-- <label for="Enter Third Choice text (leave blank if none)">Enter Third Choice text
+                                (leave blank if none)</label> -->
+                        <br>
+                        <input type="checkbox" name="choice" value="Fourth">
+                        <input class="w100" type="text" placeholder="Enter Fourth Choice text (leave blank if none)">
+                        <!-- <label for="Enter Fourth Choice text (leave blank if none)">Enter Fourth Choice text
+                                (leave blank if none)</label> -->
+                        <br>
+                        <input type="checkbox" name="choice" value="Fifth">
+                        <input class="w100" type="text" placeholder="Enter Fifth Choice text (leave blank if none)">
+                        <!-- <label for=" Enter Fifth Choice text (leave blank if none)"> Enter Fifth Choice text
+                                (leave blank if none)</label> -->
+                    </form>
+                    <a href="javascript:void(0)"><span class="icon-minus-circle"></span></a>
+
+                </div>
+                <div class="inputZone inputDone hide">
+                    <b>Image Upload:</b>
+                    <button>Upload Image</button>
+                </div>
+
+            </div>
+            <div class="Btn">
+                <!-- Next 按鈕 -->
+                <button class="next"><a href="javascript:void(0)">Preview</a></button>
+            </div>
+        </div>
+
+        <!-- Preview -->
+        <div class="content animated fadeInUp" style="animation-delay: .8s;">
+            <div class="courseLine">
+                <div class="step">Campaign Specs<span class="icon-arrow-right"></span></div>
+                <div class="step">Addresses / Instances<span class="icon-arrow-right"></span></div>
+                <div class="step">Survey Questions<span class="icon-arrow-right"></span></div>
+                <div class="step active">Preview<span class="icon-arrow-right"></span></div>
+                <div class="step">Purchase & Confirmation</div>
+            </div>
+            <div class="questionArea questionArea2">
+                <p>Preview of Survey</p>
+                <div class="inputZone inputDone">
+                    <b>Survey Name :</b>
+                    <label for="Survey Name edit">Survey Name edit</label>
+                    <a href="javascript:void(0)"><span class="icon-edit"></span></a>
+                </div>
+                <div class="inputZone inputDone">
+                    <b>Survey Requirements/Instructions :</b>
+                    <label for="Survey Requirements/Instructions">Survey Requirements/Instructions edit</label>
+                    <a href="javascript:void(0)"><span class="icon-edit"></span></a>
+                </div>
+                <div class="inputZone inputDone">
+                    <b>Survey created :</b>
+                    <label for="Survey created">Survey createdSurvey createdSurvey createdSurvey createdSurvey
+                        createdSurvey createdSurvey createdSurvey createdSurvey createdSurvey created</label>
+                    <a href="javascript:void(0)"><span class="icon-edit"></span></a>
+                </div>
+
+                <div class="inputZone inputDone">
+                    <b>Survey Specifications :</b>
+                    <label class="w48" for="Campaign Title">Campaign Title :testtesttest</label>
+                    <label class="w48" for="No. of Surveys">No. of Surveys :testtesttest</label>
+                    <label class="w48" for="Survey Due Date">Survey Due Date :testtesttest</label>
+                    <label class="w48" for="Max Reimbursement">Max Reimbursement: testtesttest</label>
+                    <label class="w48" for="Shopper(s)">Shopper(s) :testtesttest</label>
+                    <label class="w48" for="The same shopper can do">The same shopper can do 1 surveys</label>
+                    <label class="w48" for="Requirements">Requirements :male, 18+, spoken English, Written English,
+                        secondary language: Cantonese</label>
+                    <label class="w48" for="25Q">No. of Surveys of 25Q :30x$200(HKD)=$6,000</label>
+                    <label class="w48" for="Reimbursement">Reimbursement :$200(HKD)x30=$4,500</label>
+                    <div class="redtxt">Previous Reimbursement remaining=$249</div>
+                    <div class="total">Total=$10,251</div>
+                    <a href="javascript:void(0)"><span class="icon-edit"></span></a>
+                </div>
+
+                <div class="inputZone">
+                    <b>Make Live :</b>
+                    <form>
+                        <input type="radio" name="live" id="Now">
+                        <label for="Now">Now</label>
+                        <br>
+                        <input type="radio" name="live" id="On this date:">
+                        <label for="On this date:">On this date:</label>
+                        <input type="date">
+                    </form>
+                </div>
+            </div>
+            <div class="Btn">
+                <!-- Next 按鈕 -->
+                <button class="next"><a href="javascript:void(0)">Purchase</a></button>
+            </div>
+        </div>
+
+        <!--  Purchase & Confirmatio -->
+        <div class="content animated fadeInUp" style="animation-delay: .8s;">
+            <div class="courseLine">
+                <div class="step">Campaign Specs<span class="icon-arrow-right"></span></div>
+                <div class="step">Addresses / Instances<span class="icon-arrow-right"></span></div>
+                <div class="step">Survey Questions<span class="icon-arrow-right"></span></div>
+                <div class="step">Preview<span class="icon-arrow-right"></span></div>
+                <div class="step active">Purchase & Confirmation</div>
+            </div>
+            <p class="purchase">Payment Process page - use Stripe <br><br><br>
+                <a href="javascript:void(0)">- Order confirmation & email</a><br>
+                <a href="javascript:void(0)">- Receipt email & pdf download link</a>
+            </p>
+        </div>
+
+    </section>
+
+</body>
+<script type="text/javascript" src="./js/wow.min.js"></script>
+<script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+
+</html>
